@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Notable', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(
+        to right,
+        #FFCF81 0%,
+        #FFCF81 50%,
+        #FFB996 50%,
+        #FFB996 100%
+    );
+}
+/*navigation bar styling*/
+nav {
+    width: 48%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+nav ul li{
+    display: inline-block;
+}
+.nav-button{
+    text-decoration: none;
+    color:#231F20;
+    box-sizing: border-box;
+    width: 200px;
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    border-style: solid;
+}
+#back-change:hover {
+    background-color: #E7DFD8;
+}
+/*This is the main container for all pages except the resume and about pages*/
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.content div, .image1, .link-hub {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.content div {
+    flex-direction: column;
+}
+.point{
+    width: 100%;
+    font-size: 3.5vw;
+    font-weight:lighter;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.discription{
+    font-size: 1.9vw;
+    font-weight:lighter;
+}
+.intro{
+    width: 100%;
+    text-align: center;
+    font-size: 3vw;
+    font-weight:normal;
+    margin-bottom: 50px;
+    padding: 30px;
+}
+/*This is the main container for the resume and about page*/
+.content-resume-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.content-resume-about div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    flex-direction: column;
+}
+.content div ul{
+    width: 90%;
+    margin-bottom: 50px;
+}
+/*The following allows the vertical split and formating for the resume page*/
+.style-2-split {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+}
+.style-2-split section{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+.style-2-download-link{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+}
+.download-text{
+    margin-bottom: 45px;
+    font-size: 1.8vw;
+}
+/*These are the containers for the about pages.*/
+.about-image-text-container{
+    display: flex;
+    flex-direction: row;
+}
+.about-image-text-container-2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.about-image-text-container section, .about-image-text-container image, .about-image-text-container-2 section, .about-image-text-container-2 img{
+    flex: 1; 
+    box-sizing: border-box;
+    padding:40px; 
+}
+.about-discription {
+    font-size: 2.2vw;
+    font-weight:lighter;
+    margin-bottom: 50px;
+}
+.about-discription-last{
+    margin-bottom: 50px;
+    font-size: 2.2vw;
+    font-weight:lighter;
+}
+/*All the titles used*/
+.title1, .title3, .title2{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.title1{
+    font-size: 8vw;
+}
+.title2{
+    
+    font-size: 5vw;
+}
+.title3{
+    
+    font-size: 7vw;
+}
+.about-title{
+    width: 50%;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 6vw;
+}
+/*all the images and icon styling used*/
+i {
+    margin-left: 20px;
+}
+.image1{
+    width: 30%;
+    height: 50%;
+}
+.image2{
+    margin-top: 50px;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 50%;
+    margin-bottom: 50px;
+}
+.image3{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 50%;
+}
+.image4{
+    width: auto;
+    max-width: 50%;
+    height: auto;
+    max-height: 50%;
+    padding: 45px;
+    margin-top: 70px;
+}
+.image5{
+    width: auto;
+    max-width: 50%;
+    height: 50%;
+}
+.image6{
+    width: auto;
+    max-width: 50%;
+    height: 50%;
+    padding: 45px;
+}
+.resume-img{
+    width:auto;
+    width: 100%;
+    height:auto;
+    height: 100%;
+}
+/*link hub stying on home page*/
+.link-hub{
+    margin-top: -50px;
+    width: 50%;
+}
+.link-hub a img{
+    width: 3.5vw;
+    text-decoration: none;
+    margin-right: 15px;
+    color: #231F20;
+    margin-left: 20px;
+}
+.link-hub button {
+    background-color: transparent;
+    margin-right: 25px;
+    border: none;
+}
+.link-hub button img{
+    width: 3.8vw;
+    color:#231F20;
+    margin-left: 20px;
+}
+.img-chain{
+    width: 3.8vw;
+    color:#231F20;
+    margin-left: 20px;
+}
+/*needed for links to be displayed when viewing html code only*/
+.html_view{
+    display: none;
+    visibility: hidden;
+}
+/*contact section for the home page*/
+.contact-title{
+    width: 50%;
+    text-align: center;
+    font-size: 7vw;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.contact-bottom button{
+    display: inline-block;
+    background-color: #169D53;
+    border: 0;
+    margin: 15px;
+    padding: 15px;
+    width: 200px;
+}
+.contact-bottom{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+form {
+    margin-bottom: 50px;
+}
+form input, form textarea{
+    width: 90%;
+    border: 0;
+    outline: none;
+    background-color: white;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 6px;
+    font-style: 18px;
+}
